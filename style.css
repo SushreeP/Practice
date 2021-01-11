@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input,
+button {
+  padding: 1em;
+  font-size: 1em;
+}
+
+button {
+  background-color: green;
+  color: white;
+  border: 1px solid green;
+  font-weight: bold;
+}
+
+.warning {
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0.65em auto;
+}
+
+li:nth-child(2) .nav-links {
+  padding-left: 1em;
+  padding-right: 1em;
+  border-left: 0.5px solid lightgray;
+  border-right: 0.5px solid lightgray;
+}
+
+.nav-links img {
+  vertical-align: middle;
+}
+
+.banner {
+  height: 70vh;
+  width: 100%;
+  background: url("./assets/pizza-banner.jpg");
+  background-size: cover;
+}
+
+.banner-text {
+  position: absolute;
+  right: 5%;
+  top: 45%;
+  text-align: center;
+  color: brown;
+  font-size: 30px;
+}
+
+.banner-text h1 {
+  font-size: 2em;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  width: 40%;
+  position: relative;
+  margin: auto;
+  transform: translateY(-50%);
+  padding: 1.25em 1.5em;
+}
+
+.card h1 {
+  color: brown;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: 400;
+}
+
+.card h2,
+.card p {
+  line-height: 1.5em;
+}
+
+.card h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.card form {
+  margin: 1em 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.card form input {
+  width: 55%;
+  border: 1px solid lightgray;
+  border-radius: 5px 0 0 5px;
+  font-weight: bold;
+}
+
+.card form input::placeholder {
+  color: lightslategrey;
+}
+
+.card form button {
+  width: 45%;
+  border-radius: 0 5px 5px 0;
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  margin: 1.25em auto;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  flex-basis: auto;
+}
+
+.heading h1 {
+  display: block;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 400;
+  margin: 0 10px;
+  flex-shrink: 0;
+}
+
+.line {
+  height: 2.5px;
+  background-color: white;
+  position: relative;
+  width: 40%;
+  transform: translateY(50%);
+  border: 0.2px solid lightgray;
+}
+
+.deals-images {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.image {
+  width: 50%;
+  margin: 0 5px;
+}
+
+.image img {
+  width: 100%;
+  margin: 0;
+}
+
+.image p {
+  display: block;
+  font-size: 0.65em;
+  text-align: center;
+  background-color: brown;
+  color: white;
+
+  position: relative;
+  top: -5px;
+}
+
+.deals button {
+  width: 85%;
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.dine-in {
+  background-image: url("./assets/narrow-banner.jpg");
+  width: 85%;
+  margin: auto;
+  padding: 1em;
+}
+
+.wrapper {
+  background-color: white;
+  margin: auto;
+  width: 75%;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+}
+
+.wrapper div {
+  width: 50%;
+  text-align: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  font-size: 1.25em;
+  font-weight: bold;
+  line-height: 2.2em;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.wrapper button {
+  width: 50%;
+  background-color: yellow;
+  border: 1px solid yellow;
+  border-radius: 5px;
+  color: black;
+  font-size: 1em;
+}
+
+.footer {
+  margin-top: 2em;
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  padding: 1.5em;
+}
+
+.footer table {
+  width: 85%;
+  margin: 1.5em auto;
+}
+
+.footer table h1 {
+  margin-bottom: 0.5em;
+}
+
+.copyright {
+  text-align: center;
+  color: lightcyan;
+  margin: 20px auto 10px;
+}
